@@ -72,7 +72,7 @@ section p {
   width: auto;
 }
 
-#works div h1 {
+#works {
   color: pink;
   font-size: 30px;
   border-bottom: pink solid 6px;
@@ -91,37 +91,38 @@ section p {
   padding: 25px;
 }
 
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .card-container {
   color: whitesmoke;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 2px;
   text-shadow: -1px -1px black, 1px 1px black, -1px 1px black;
   font-size: 30px;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
 }
 
-.card-container div img {
-  width: 50%;
+.card-container img {
+  flex: 4 1 0%;
 }
 
-.card-container div h3,
+.card-container h3,
 h4 {
   translate: 15px -80px;
 }
 
-.card-container div h4 {
+.card-container h4 {
   font-style: italic;
   font-size: 20px;
   color: darkgrey;
 }
 
 #contact {
-    padding-right: 20px;
-    border-right: pink solid 5px;
+  padding-right: 20px;
+  border-right: pink solid 5px;
 }
 
 @media screen and (max-width: 768px) {
