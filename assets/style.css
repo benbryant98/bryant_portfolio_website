@@ -40,7 +40,7 @@ nav ul li a {
 
 #headpic {
   height: 500px;
-  min-width: max-content;
+  min-width: 100%;
 }
 
 body {
