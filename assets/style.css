@@ -1,10 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
 header {
-  flex-direction: row;
-  width: 100%;
+  min-width: 100%;
   background-color: black;
   color: aliceblue;
   font-size: 30px;
@@ -13,8 +8,10 @@ header {
 
 header h1 {
   background: -webkit-linear-gradient(#ffffff, #b8acac);
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  min-width: 100%;
 }
 
 header nav ul {
@@ -36,81 +33,104 @@ nav ul li a {
   font-style: oblique;
   padding-left: 15px;
   background: -webkit-linear-gradient(#bb07ac, #b8acac);
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #headpic {
-  width: 100%;
   height: 500px;
-  min-width: 375px;
+  min-width: max-content;
 }
 
 body {
   background-color: rgb(11, 11, 71);
+  margin: 0px;
+  padding: 0px;
 }
 
-section {
+.asides {
   display: flex;
   flex-direction: row;
   padding: 40px;
+  align-items: center;
 }
 
 section aside {
   color: pink;
   font-size: 30px;
-  border-right: pink solid;
   padding-right: 20px;
-  border-width: 5px;
 }
 
 section p {
   color: white;
   font-size: 25px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding-left: 50px;
+  padding-left: 90px;
   line-height: 1.6;
-}
-
-.card-container {
-  color: whitesmoke;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  letter-spacing: 2px;
-  text-shadow: -1px -1px black, -1px -1px black, -1px -1px black;
-  font-size: 30px;
-}
-
-.card-container figure h3,
-h4 {
-  translate: 15px -80px;
-}
-
-.card-container figure h4 {
-  font-style: italic;
-  font-size: 20px;
-  color: darkgrey;
-}
-
-.card-container img {
-  flex: 0 0 33.3%;
-  border-radius: 9px;
-  height: auto;
-  max-width: 100%;
-}
-
-#lorem img {
-  max-width: 100%;
-}
-
-#works {
-  /* flex-direction: column; */
-  align-items: center;
-  flex-flow: column wrap;
-  height: auto;
+  border-left: pink solid;
+  width: auto;
 }
 
 #works div h1 {
   color: pink;
   font-size: 30px;
   border-bottom: pink solid 6px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.asides ul {
+  display: flex;
+  padding-left: 50px;
+}
+
+.asides ul li {
+  color: pink;
+  font-size: 30px;
+  padding: 25px;
+}
+
+.card-container {
+  color: whitesmoke;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  text-shadow: -1px -1px black, 1px 1px black, -1px 1px black;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-container div img {
+  width: 50%;
+}
+
+.card-container div h3,
+h4 {
+  translate: 15px -80px;
+}
+
+.card-container div h4 {
+  font-style: italic;
+  font-size: 20px;
+  color: darkgrey;
+}
+
+#contact {
+    padding-right: 20px;
+    border-right: pink solid 5px;
+}
+
+@media screen and (max-width: 768px) {
+  head,
+  body {
+    flex-direction: column;
+    min-width: 375px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
