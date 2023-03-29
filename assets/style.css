@@ -93,8 +93,7 @@ section p {
 
 #container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card-container {
@@ -105,9 +104,9 @@ section p {
   font-size: 30px;
 }
 
-.card-container img {
+/* .card-container img {
   flex: 4 1 0%;
-}
+} */
 
 .card-container h3,
 h4 {
@@ -127,7 +126,8 @@ h4 {
 
 @media screen and (max-width: 768px) {
   head,
-  body {
+  body,
+  #container {
     flex-direction: column;
     min-width: 375px;
   }
