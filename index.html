@@ -4,103 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale-1.0" />
     <title>Benjamin Bryant, A Career in Development</title>
-    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="assets/style.css" />
-    <script src="script.js"></script>
   </head>
-
+  
   <body>
     <header>
-      <h1>Benjamin Bryant<span class="diva">Creative Diva</span></h1>
-      <nav>
-        <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact Me</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <h1>Benjamin Bryant<span class="diva">Creative Diva</span></h1>
+          </div>
+          <div class="navbar-end ">
+            <a class="navbar-item ml-3" href="#">About Me</a>
+            <a class="navbar-item ml-3" href="#">Work</a>
+            <a class="navbar-item ml-3" href="#">Contact Me</a>
+            <a class="navbar-item ml-3" href="#">Resume</a>
+          </div>
+        </div>
       </nav>
     </header>
     <img
       id="headpic"
       src="images\HanoverTavernWedding-141.jpg"
       alt="My wife and I walking in front of Hanover Tavern"
-    />
-
-    <main>
-      <!-- About Me Section -->
-      <section class="asides">
-        <aside>
-          <h1>About Me</h1>
-        </aside>
-        <p>
-          My full name is Benjamin Curtis Bryant, middle name courtesy of my
-          father. I recently married my best friend and together we have 3
-          adorable cats. As someone who grew up toying with an operating system
-          quite literally as old as I was, technology has seemed ever present in
-          my life. Similarly has my fascination and amazement with it, starting
-          with basic flash games and windows paint, to learning how to make a
-          choose-your-own-adventure game in Python, to present day where I hope
-          to use my aptitude towards computers as a stepping stone to a career
-          in development. Outside of computers, I am passionate about animals,
-          enjoy the nerdier hobbies in life such as Magic the Gathering and
-          Dungeons & Dragons, and getting obsessed with a random hobby every
+      />
+      
+      <main>
+        <!-- About Me Section -->
+        <section class="">
+          <aside>
+            <h1>About Me</h1>
+          </aside>
+          <p>
+            My full name is Benjamin Curtis Bryant, middle name courtesy of my
+            father. I recently married my best friend and together we have 3
+            adorable cats. As someone who grew up toying with an operating system
+            quite literally as old as I was, technology has seemed ever present in
+            my life. Similarly has my fascination and amazement with it, starting
+            with basic flash games and windows paint, to learning how to make a
+            choose-your-own-adventure game in Python, to present day where I hope
+            to use my aptitude towards computers as a stepping stone to a career
+            in development. Outside of computers, I am passionate about animals,
+            enjoy the nerdier hobbies in life such as Magic the Gathering and
+            Dungeons & Dragons, and getting obsessed with a random hobby every
           time the ADHD kicks in.
         </p>
       </section>
       <!-- Work Section -->
       <section>
         <div>
-          <h1 id="works">Assorted Works</h1>
+          <h1>Assorted Works</h1>
         </div>
         <!-- Still a placeholder -->
-        <div id="container">
-          <div class="card-container">
-            
-              <img
+        <div class="tile is-ancestor my-4 is-vertical">
+          <div id="first-tile" class="card tile is-8 is-parent is-vertical my-3">
+            <div class="card-image tile is-child">
+              <figure class="image">
+                <img
+                class=""
                 src="images\lorem1.png"
                 alt="A fox telling a cow 'lorem ipsum'"
-              />
-              <h3>Lorem</h3>
-              <h4>ASM</h4>
+                />
+              </figure>
+            <div class="card-footer">
+              <h3 class="card-footer-item">Lorem</h3>
+              <h4 class="card-footer-item">ASM</h4>
+            </div>  
+          </div>
             
           </div>
           <!-- Still a placeholder -->
-          <div class="card-container">
-            
-              <img
-                src="images\lorem1.png"
-                alt="A fox telling a cow 'lorem ipsum'"
-              />
-              <h3>Ipsum</h3>
-              <h4>Python/C++</h4>
-            
-          </div>
-          <!-- Still a placeholder -->
-          <div class="card-container">
-            <div>
-              <img
-                src="images\lorem1.png"
-                alt="A fox telling a cow 'lorem ipsum'"
-              />
-              <h3>Cure for Cancer</h3>
-              <h4>MATLAB</h4>
+          <div class="card tile is-parent">
+            <div class="tile is-5 is-child">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                  src="images\lorem1.png"
+                  alt="A fox telling a cow 'lorem ipsum'"
+                  />
+                </figure>
+              </div>
+                <div class="card-footer">
+                  <h3 class="card-footer-item">Ipsum</h3>
+                  <h4 class="card-footer-item">Python/C++</h4>
+              </div>
+            </div>
+            <div class="card tile is-5 is-child">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                  src="images\lorem1.png"
+                  alt="A fox telling a cow 'lorem ipsum'"
+                  />
+                </figure>
+              </div>
+              <div class="card-footer">
+                <h3 class="card-footer-item">Cure for Cancer</h3>
+                <h4 class="card-footer-item">MATLAB</h4>
+              </div>
             </div>
           </div>
           <!-- Still a placeholder -->
-          <div class="card-container">
-            <div id="dstar">
+          <!-- Still a placeholder -->
+          <div class="">
+            <div class="">
               <img
-                src="images\lorem1.png"
-                alt="A fox telling a cow 'lorem ipsum'"
+              src="images\lorem1.png"
+              alt="A fox telling a cow 'lorem ipsum'"
               />
               <h3>Deathstar Blueprints</h3>
               <h4>AutoCAD</h4>
             </div>
           </div>
           <!-- Still a placeholder -->
-          <div class="card-container">
-            <div id="cornhole">
+          <div class="">
+            <div class="">
               <img
                 src="images\lorem1.png"
                 alt="A fox telling a cow 'lorem ipsum'"
@@ -112,9 +131,9 @@
         </div>
       </section>
       <!-- Contact Me Section -->
-      <section class="asides">
+      <section class="">
         <aside>
-          <h1 id="contact">Contact Me</h1>
+          <h1 class="">Contact Me</h1>
         </aside>
         <ul>
           <li>(804)366-7750</li>
@@ -125,5 +144,7 @@
         </ul>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
-</html>
+  </html>
+  
