@@ -17,8 +17,8 @@ header h1 {
   -webkit-text-fill-color: transparent;
 }
 
-#first-tile {
-  left: 20%;
+#spacing {
+  margin-right: 10px;
 }
 
 .diva {
