@@ -4,7 +4,7 @@ A portfolio website that describes a little about me and contains links to proje
 
 # Screenshot
 
-![Deployed Website](images\benbryant98.github.io_bryant_portfolio_website_.png)
+![Deployed Website](./images/benbryant98.github.io_bryant_portfolio_website_.png)
 
 # Deployed Application
 
