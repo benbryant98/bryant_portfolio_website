@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale-1.0" />
     <title>Benjamin Bryant, A Career in Development</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="assets/style.css" />
   </head>
-  
+
   <body>
     <header>
       <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -15,151 +18,146 @@
           <div class="navbar-start">
             <h1>Benjamin Bryant<span class="diva">Creative Diva</span></h1>
           </div>
-          <div class="navbar-end ">
-            <a class="navbar-item ml-3" href="#">About Me</a>
-            <a class="navbar-item ml-3" href="#">Work</a>
-            <a class="navbar-item ml-3" href="#">Contact Me</a>
-            <a class="navbar-item ml-3" href="#">Resume</a>
+          <div class="navbar-end">
+            <a class="navbar-item ml-3" href="#about">About Me</a>
+            <a class="navbar-item ml-3" href="#work">Work</a>
+            <a class="navbar-item ml-3" href="#contact">Contact Me</a>
           </div>
         </div>
       </nav>
     </header>
-    <img
-      id="headpic"
-      src="images\HanoverTavernWedding-141.jpg"
-      alt="My wife and I walking in front of Hanover Tavern"
+    <figure class="image is-128x128">
+      <img
+        class="is-rounded"
+        src="images\headshot.jpg"
+        alt="My wife and I walking in front of Hanover Tavern"
       />
-      
-      <main>
-        <!-- About Me Section -->
-        <section class="">
-          <aside>
-            <h1>About Me</h1>
-          </aside>
-          <p>
-            My full name is Benjamin Curtis Bryant, middle name courtesy of my
-            father. I recently married my best friend and together we have 3
-            adorable cats. As someone who grew up toying with an operating system
-            quite literally as old as I was, technology has seemed ever present in
-            my life. Similarly has my fascination and amazement with it, starting
-            with basic flash games and windows paint, to learning how to make a
-            choose-your-own-adventure game in Python, to present day where I hope
-            to use my aptitude towards computers as a stepping stone to a career
-            in development. Outside of computers, I am passionate about animals,
-            enjoy the nerdier hobbies in life such as Magic the Gathering and
-            Dungeons & Dragons, and getting obsessed with a random hobby every
+    </figure>
+
+    <main>
+      <!-- About Me Section -->
+      <section id="about" class="is-flex">
+        <h1 class="is-size-1 br pr-4">About Me</h1>
+        <p class="is-size-4 pl-4">
+          My full name is Benjamin Curtis Bryant, middle name courtesy of my
+          father. I recently married my best friend and together we have 3
+          adorable cats. As someone who grew up toying with an operating system
+          quite literally as old as I was, technology has seemed ever present in
+          my life. Similarly has my fascination and amazement with it, starting
+          with basic flash games and windows paint, to learning how to make a
+          choose-your-own-adventure game in Python, to present day where I hope
+          to use my aptitude towards computers as a stepping stone to a career
+          in development. Outside of computers, I am passionate about animals,
+          enjoy the nerdier hobbies in life such as Magic the Gathering and
+          Dungeons & Dragons, and getting obsessed with a random hobby every
           time the ADHD kicks in.
         </p>
       </section>
       <!-- Work Section -->
-      <section>
-        <div>
-          <h1>Assorted Works</h1>
-        </div>
-        <!-- Still a placeholder -->
-        <div class="tile is-ancestor my-4 is-vertical">
-          <div class="tile is-parent is-justify-content-center">
-          <div id="first-tile" class="card tile is-8 is-child">
+      <section id="work" class="is-flex">
+        <h1 class="is-size-1 br pr-6">Assorted Works</h1>
+        <div class="container">
+          <div class="card w-985">
             <div class="card-image">
-              <figure class="image is-3by2">
+              <a
+                    target="_blank"
+                    class="big-link"
+                    href="https://github.com/benbryant98/readme-generator"
+                    >README Generator</a
+                  >
+              <figure class="image is-3by2 w-985 pt-0">
                 <img
-                class=""
-                src="images\lorem1.png"
-                alt="A fox telling a cow 'lorem ipsum'"
+                  src="./images/projects/scheduler.png"
+                  alt="Daily Scheduling Application screenshot"
                 />
               </figure>
-            <div class="card-footer">
-              <h3 class="card-footer-item">Lorem</h3>
-              <h4 class="card-footer-item">ASM</h4>
-            </div>  
-            </div>
-            
-          </div>
-        </div>
-        </div>
-          <!-- Still a placeholder -->
-          <div class="tile is-ancestor is-justify-content-center">
-          <div class="tile is-parent">
-            <div class="card tile is-child">
-              <div class="card-image">
-                <figure class="image">
-                  <img
-                  src="images\lorem1.png"
-                  alt="A fox telling a cow 'lorem ipsum'"
-                  />
-                </figure>
-              </div>
-                <div class="card-footer">
-                  <h3 class="card-footer-item">Ipsum</h3>
-                  <h4 class="card-footer-item">Python/C++</h4>
-              </div>
             </div>
           </div>
-            <div class="tile is-parent">
-            <div class="card tile is-child">
-              <div class="card-image">
-                <figure class="image">
-                  <img
-                  src="images\lorem1.png"
-                  alt="A fox telling a cow 'lorem ipsum'"
-                  />
-                </figure>
+          <div class="columns">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <a
+                    target="_blank"
+                    class="link"
+                    href="https://github.com/benbryant98/take-a-quiz"
+                    >JavaScript Quiz</a
+                  >
+                  <figure class="image is-3by2 w-978">
+                    <img
+                      src="./images/projects/quiz.png"
+                      alt="JavaScript Quiz screenshot"
+                    />
+                  </figure>
+                </div>
               </div>
-              <div class="card-footer">
-                <h3 class="card-footer-item">Cure for Cancer</h3>
-                <h4 class="card-footer-item">MATLAB</h4>
-              </div>
-            </div>
-          </div>
-          </div>
-            <div class="tile is-parent is-justify-content-center">
-            <div id="spacing" class="card tile is-5 is-child">
-              <div class="card-image">
-                <figure class="image">
-                  <img
-                  src="images\lorem1.png"
-                  alt="A fox telling a cow 'lorem ipsum'"
-                  />
-                </figure>
-              </div>
-              <div class="card-footer">
-                <h3 class="card-footer-item">Deathstar Blueprints</h3>
-                <h4 class="card-footer-item">AutoCAD</h4>
-              </div>
-            </div>
-            <div class="card tile is-5 is-child">
-              <div class="card-image is-justify-content-center">
-                <figure class="image">
-                  <img
-                  src="images\lorem1.png"
-                  alt="A fox telling a cow 'lorem ipsum'"
-                  />
-                </figure>
-              </div>
-              <div class="card-footer">
-                <h3 class="card-footer-item">Cornhole Boards</h3>
-                <h4 class="card-footer-item">Wood & Screws</h4>
+              <div class="card">
+                <div class="card-image">
+                  <a
+                    target="_blank"
+                    class="link"
+                    href="https://github.com/benbryant98/readme-generator"
+                    >README Generator</a
+                  >
+                  <figure class="image is-3by2 w-978">
+                    <img
+                      src="./images/projects/readme.png"
+                      alt="README Generator screenshot of inquirer program"
+                    />
+                  </figure>
+                </div>
               </div>
             </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <a
+                    target="_blank"
+                    class="link"
+                    href="https://github.com/benbryant98/timekeeper"
+                    >TimeKeeper</a
+                  >
+                  <figure class="image is-3by2 w-978">
+                    <img
+                      src="./images/projects/calendar.png"
+                      alt="Screenshot of calendar application"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a
+                    target="_blank"
+                    class="link"
+                    href="https://github.com/benbryant98/eshop-backend"
+                    >MySQL Store Inventory</a
+                  >
+                  <figure class="image is-3by2 w-978">
+                    <img
+                      src="./images/projects/sqldatabase.png"
+                      alt="Screenshot of insomnia testing environment with store data"
+                    />
+                  </figure>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Contact Me Section -->
-      <section class="">
+      <section id="contact">
         <aside>
           <h1 class="">Contact Me</h1>
         </aside>
         <ul>
-          <li>(804)366-7750</li>
-          <li>bryantbc98@gmail.com</li>
+          <li>
+            <a href="mailto:bryantbc98@gmail.com">bryantbc98@gmail.com</a>
+          </li>
           <!-- Make a link here -->
           <li><a href="https://github.com/benbryant98">GitHub</a></li>
-          <li><a href="https://www.saltybet.com/">Salty Bet</a></li>
         </ul>
       </section>
     </main>
-    <script src="script.js"></script>
   </body>
-  </html>
-  
+</html>
